@@ -1,6 +1,9 @@
 <?php
+    //陣列(array)
+    $x[0] = "Hello"."\n";
+    echo $x[0];
 
-    print("Hello world"."\n");
+print("Hello world"."\n");
     print("This is a frist program"."\n");
     print time();
     $now =time();
@@ -31,7 +34,7 @@
      echo "sum=$sum<br />"."\n";
 
 
-     
+
      //circule rate 
      define('PI' ,3.1415926);
 
@@ -46,4 +49,24 @@
      echo "Circule length is ".$length."\n";
 
 
+     //true or false
+    $t = true;
+    $f = false;
+    echo "\$t 值 : $t 數字 : (int)$t "."<br />" ."\n";
+    echo "\$f 值 : $f 數字 : (int)$f "."<br />" ."\n";    
+
+    //PHP 資料型態轉換  強制轉換
+    $pi = 3.141592;
+    echo "\$pi 轉成整數 : ".(int)$pi."\n";
+    $input = "3.141592pi";
+    echo "pi 轉成浮點數 : ".(float)$input."\n";
+
+    //以函數轉換
+    $pi = 3.141592;
+    settype($pi, "integer");
+    echo "\$pi 轉成整數: ".$pi."\n";
+    $piString = "3.141592circle";
+    echo "是否有轉成功".settype($piString, "float")."\n";
+    echo "\$piString 是: ".$piString."\n";
 ?>
+
