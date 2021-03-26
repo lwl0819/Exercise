@@ -1,0 +1,25 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    border-spacing: 5px;
+  }
+th{
+    background-color:gold;
+    color:white;
+}
+th{
+    text-align: center;
+    background-color: gold;
+    color: honeydew;
+}
+th, td {
+    padding: 5px;
+  }
+#table02 th{
+    background-color: hotpink;
+}
+#table02 tr:nth-child(even){
+    color:red;
+}  
