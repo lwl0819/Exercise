@@ -1,0 +1,24 @@
+.cars{
+    background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.carstable{
+    text-align: center;
+}
+.truck{
+    text-align: center;
+}
+.motors{
+    background-color: Gold;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+#carscolors{
+    color: cyan;
+}
