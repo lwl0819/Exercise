@@ -1,7 +1,7 @@
 <?php
 
-interface dowash{
-    public function dowash();
+interface doWash{
+    public function doWash();
 }
 
 ?>

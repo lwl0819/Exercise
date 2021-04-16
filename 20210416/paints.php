@@ -2,52 +2,55 @@
 include "clothes.php";
 
 class Paint extends Clothes{
-    protected $length;
-    protected $waist;
+    private $length;
+    private $waist;
+    private $mark;
 
-    public function __construct($outsidename,$outsidePrize,$outsidelength,$outsidewaist){
-        parent::__construct($outsidename,$outsidePrize);
-        $this->setName = ($outsidename);
-        $this->setPrize = ($outsidePrize);
-        $this->length = $outsidelength;
-        $this->waist = $outsidewaist;
-
+    public function __construct($outsideName,$outsidePrize,$outsideLength,$outsideWaist){
+        parent::__construct($outsideName,$outsidePrize);
+        $this->setName($outsideName);
+        $this->setPrize($outsidePrize);
+        $this->length = $outsideLength;
+        $this->waist = $outsideWaist;
     }
 
-    public function setName($outsidename)
-    {
-        $this->name = $outsidename;
+    public function setName($outsideName){
+        $this->name = $outsideName;
+    }
+
+    public function setPrize($outsidePrize){
+        $this->prize = $outsidePrize;
+    }
+
+    public function setMark(Mark $mark){
+            $this->mark = $mark;
+    }      
+
+    public function getMark(): Mark{
+        return $this->mark;
+    }
+
+    public function getName(){
         return $this->name;
     }
 
-    public function setPrize($outsidePrize)
-    {
-        $this->prize = $outsidePrize;
+    public function getPrize(){
+        return $this->prize;
     }
-    public function setlength($outsidelength){
-        $this->length = $outsidelength;
-    }
-    
-    public function getlength(){
-        return $this-> length;
-    }
-    public function setwaist($outsidewaist){
-        $this->waist = $outsidewaist;
-    }
-    public function getwaist(){
-        return $this-> waist;
+    public function getLength(){
+        return $this->length;
     }
 
-    public function dowash(){
-        $string ="用手洗 !再".parent::dowash();
+    public function getWaist(){
+        return $this->waist;
+    }
+
+    public function doWash(){
+        $string = "用手洗！再".parent::doWash();
         return $string;
-
-        //return "用手洗 !";
-
+        //return "用手洗！";
     }
-    public function __destruct()
-    {
-        
+    public function __destruct(){    
     }
     
         

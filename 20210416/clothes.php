@@ -1,38 +1,40 @@
 <?php
 include "doWash.php";
+include "Mark.php";
 
-abstract class Clothes implements doWash {
+abstract class Clothes implements doWash{
     private $name;
-    private $price;
-
-    public function __construct($outsidename,$outsidePrize){
-        $this->name = $outsidename;
+    private $prize;
+    
+    public function __construct($outsideName, $outsidePrize){
+        $this->name = $outsideName;
         $this->prize = $outsidePrize;
-
     }
 
-    public function setName($outsidename){
-        $this->name = $outsidename;
-
+    public function setName($outsideName){
+        //$this->name = $outsidename;
     }
-
+    
     public function getName(){
-        return $this-> name;
-    }
-    public function setPrize($outsideprize){
-        $this->prize = $outsideprize;
-    }    
-    public function getPrize(){
-        return $this-> prize;
     
     }
-    public function dowash(){
-      //  return "用洗衣機洗";
+
+    public function setPrize($outsidePrize){
+        //$this->prize = $outsidePrize;
     }
-    public function __destruct()
-    {
+
+    public function getPrize(){
+        //return $this->prize;
+    }
+
+    public function doWash(){
+        //return "用洗衣機清洗！";
+    }
+
+    public function __destruct(){
         
     }
     
 }
+
 ?>
