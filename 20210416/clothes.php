@@ -1,23 +1,20 @@
 <?php
 include "doWash.php";
-include "Mark.php";
 
 abstract class Clothes implements doWash{
     private $name;
     private $prize;
     
-    public function __construct($outsideName, $outsidePrize){
-        $this->name = $outsideName;
+    public function __construct($outsidename, $outsidePrize){
+        $this->name = $outsidename;
         $this->prize = $outsidePrize;
     }
 
-    public function setName($outsideName){
+    public function setName($outsidename){
         //$this->name = $outsidename;
     }
     
-    public function getName(){
-    
-    }
+    public function getName(){}
 
     public function setPrize($outsidePrize){
         //$this->prize = $outsidePrize;
@@ -32,9 +29,7 @@ abstract class Clothes implements doWash{
     }
 
     public function __destruct(){
-        
     }
-    
 }
 
 ?>

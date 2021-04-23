@@ -46,15 +46,12 @@ class Paint extends Clothes{
     }
 
     public function doWash(){
-        $string = "用手洗！再".parent::doWash();
+        $string = "用手洗！".parent::doWash();
         return $string;
         //return "用手洗！";
     }
     public function __destruct(){    
     }
-    
-        
-    
 }
 
 ?>
