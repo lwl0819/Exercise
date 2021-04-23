@@ -1,0 +1,26 @@
+/*For input data table*/
+#input {
+     align-items: center;
+}
+
+#input table{
+    border: 1px solid black; 
+    margin: auto;
+}
+
+#input table tr th{
+    background-color: blueviolet;
+    border: 0px;
+    text-shadow: 2px 2px 5px red;
+    font-size: 40px;
+}
+
+#input table td{
+    font-size: 25px;
+}
+
+div.center#button{
+    width: 35%;
+    margin: auto;
+    font-size: 20px;
+}
