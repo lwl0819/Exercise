@@ -1,5 +1,5 @@
 # Webproject Name
-+ 介紹馬來西亞-吉隆坡
++ 馬來西亞-吉隆坡
 
 ## Founction of My Project
 + 首頁
@@ -18,4 +18,3 @@
 ## Record of Designed 
 + 2021/05/14 Ideal Create
 + 2121/05/14 建立資料庫
-+ 2121/05/14 站台名稱:mysite
