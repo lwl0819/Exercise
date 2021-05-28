@@ -1,0 +1,3 @@
+apple@example.com|apple mac os
+microsoft@example.com|bill gates
+aws@example.com|bruce fu
