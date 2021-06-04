@@ -1,3 +1,3 @@
 <?php
-setcookie('username','peter');
+setcookie('username','peter4');
 ?>

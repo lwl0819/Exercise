@@ -10,5 +10,7 @@ $datetime = microtime(date('2021-06-01 00:00:00')) -microtime(time());
 //print $datetime;
 setcookie('date-user','Peter3',$datetime);
 
-setcookie('path-user','Peter4',time()+60*60*24,'./manager/');
+setcookie('path-user',' ');
+
+setcookie('path-user','Peter4',time()+60*60*24,'./manager/','.example.com',true,true);
 ?>
