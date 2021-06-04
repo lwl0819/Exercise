@@ -10,4 +10,7 @@ print ' ';
 
 print 'Hello, '. $_COOKIE['date-user'];
 print ' ';
+
+print 'Hello, '. $_COOKIE['path-user'];
+print ' ';
 ?>
