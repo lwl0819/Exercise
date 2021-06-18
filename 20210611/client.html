@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+              <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+            </div>
+            <form>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="switch1">
+                  <label class="custom-control-label" for="switch1">Toggle me</label>
+                </div>
+              </form>
+              <br>
+              <form>
+                <label for="customRange">Custom range</label>
+                <input type="range" class="custom-range" id="customRange" name="points1">
+              </form>
+              <br>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <script>
+                // Add the following code if you want the name of the file appear on select
+                $(".custom-file-input").on("change", function() {
+                  var fileName = $(this).val().split("\\").pop();
+                  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                });
+                </script>
+          </form>
+    </div>
+</body>
+</html>
