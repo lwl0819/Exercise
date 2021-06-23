@@ -12,9 +12,12 @@ class indexView extends View {
     }
 
     public function show($user){
+        include(APP_PATH.'app/Views/header.html');
         $twig = $this->getTwig();
         echo $twig->render('index.html.twig', ['name' => 'John Doe', 
     'occupation' => 'gardener']);
+
+        include(APP_PATH.'app/Views/footer.html');
     }
 
     public function __destruct(){
