@@ -1,11 +1,7 @@
 <?php
-
-namespace kernel;
-
-abstract class Model{
-    
-    //construct
-    abstract public function __construct();
-    //deconstruct
-    abstract public function __destruct();
-}
+    namespace Kernel;
+    abstract class Model{
+        abstract public function __construct();
+        abstract public function __destruct();
+    }
+?>

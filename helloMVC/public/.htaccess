@@ -1,12 +1,12 @@
-#<IfModule mod_Rewrite.c>
-# 開啟 Apache Web Server 目錄轉向功能
+<IfModule mod_rewrite.c>
+# 開啓 Apache Web Server 目錄轉向功能
 RewriteEngine On
 
-# 確保請求路徑不是一個檔名或目錄
+# 確保請求路徑不易不是一個檔名或目錄
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # 重定向所有請求到 index.php?url=PATHNAME
 RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
 
-#</IfModule mod_Rewrite.c>
+</IfModule mod_rewrite.c>
