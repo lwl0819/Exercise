@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c>
+#<IfModule mod_Rewrite.c>
 # 開啟 Apache Web Server 目錄轉向功能
 RewriteEngine On
 
@@ -9,4 +9,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # 重定向所有請求到 index.php?url=PATHNAME
 RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
 
-</IfModule mod_rewrite.c>
+#</IfModule mod_Rewrite.c>
