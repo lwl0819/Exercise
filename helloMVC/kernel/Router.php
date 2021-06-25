@@ -1,6 +1,5 @@
 <?php
-    use Config\Router;
+use config\Router;
 
-    Router::addRoute('/login',LoginController::class);
-    Router::addRoute('/',IndexController::class);   
-?>
+Router::addRoute('/login',LoginController::class);
+Router::addRoute('/',IndexController::class);
